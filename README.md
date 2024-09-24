@@ -6,18 +6,25 @@ $(call inherit-product, vendor/bcr/bcr.mk)
 
 # Basic Call Recorder
 
-![latest release badge](https://img.shields.io/github/v/release/chenxiaolong/BCR?sort=semver)
-![license badge](https://img.shields.io/github/license/chenxiaolong/BCR)
+<img src="app/images/icon.svg" alt="app icon" width="72" />
+
+[![latest release badge](https://img.shields.io/github/v/release/chenxiaolong/BCR?sort=semver)
+[![license badge](https://img.shields.io/github/license/chenxiaolong/BCR)
+
+BCR is a simple Android call recording app for rooted devices or devices running custom firmware. Once enabled, it stays out of the way and automatically records incoming and outgoing calls in the background.
+
+<img src="app/images/light.png" alt="light mode screenshot" width="200" /> <img src="app/images/dark.png" alt="dark mode screenshot" width="200" />
 
 ## Features
 
-* Supports Android 9 through 13
+* Supports Android 9 and newer
 * Supports output in various formats:
   * OGG/Opus - Lossy, smallest files, default on Android 10+
   * M4A/AAC - Lossy, smaller files, default on Android 9
   * FLAC - Lossless, larger files
   * WAV/PCM - Lossless, largest files, least CPU usage
 * Supports Android's Storage Access Framework (can record to SD cards, USB devices, etc.)
+* Direct boot aware (records calls prior to first unlock after a reboot)
 * Per-contact auto-record rules
 * Quick settings toggle
 * Material You dynamic theming
